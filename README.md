@@ -30,6 +30,70 @@ The Treasury Smart Contract is a Solidity contract that can interact with other 
 * IProtocolAdapter: This is an interface that defines the functions that each protocol adapter should implement. It contains the functions deposit, withdraw, getBalance, and getAPY.
 * ProtocolAdapter: This is an example implementation of a protocol adapter that interacts with a single protocol (e.g. Uniswap or AAVE). You can create multiple protocol adapters for different protocols.
 
+<br/>
+
+![Getting Started](./vrs.png)
+
+
+<br/>
+
+# Usage
+
+### To use the Treasury Smart Contract, follow these steps:
+
+* Deploy the Treasury.sol contract to a test/mainnet network.
+* Add protocol adapters and distribution ratios using the addAdapter function. The contract owner can set the distribution ratio dynamically using the updateAdapterRatio function.
+* Users can deposit stablecoins to the contract using the deposit function. The stablecoins will be distributed among the protocols according to the distribution ratio.
+* The contract owner can withdraw funds partially or fully from the protocols using the withdraw function.
+* Users can check the aggregated percentage yield of all the protocols using the getAggregatedAPY function.
+
+
+<br/>
+
+# Installation
+### To install the dependencies, run the following command:
+
+Run command: 
+ ``` 
+ git clone https://github.com/blcdevs/treasury-smart-contract.git   
+```
+
+
+ ```
+ $ npm install
+ ```    
+
+  ```
+ $ npx hardhat test
+
+ ```    
+
+ # Deployment
+
+  ```
+ $ npx hardhat compile
+
+ ```  
+
+  ```
+
+  ```
+   $ npx hardhat run scripts/deploy.js --network goerli
+  ```
+ $ npx hardhat verify --network goerli smart contract address stablecoin address
+
+ ```  
+
+ ### To deploy the contract to a mainnet network, run the following command:
+
+
+```
+npx hardhat run --network mainnet scripts/deploy.js
+```
+
+# Conclusion
+
+The Treasury Smart Contract is a powerful tool that allows you to distribute funds among different liquidity pools and DeFi protocols. It is flexible, customizable, and easy to use. By using this contract, you can optimize your yield farming strategy and maximize your returns.
 
 
 
