@@ -1,4 +1,5 @@
-# Full Stack NFT Marketplace </br>
+# Treasury Smart Contract
+ </br>
 
 <p>
     This project is an implementation of a smart contract that can receive funds in the form of stablecoins and distribute them among different liquidity pools and DeFi protocols. The smart contract allows the owner to set the distribution ratio dynamically and withdraw funds partially or fully from the protocols.
