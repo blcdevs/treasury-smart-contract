@@ -68,24 +68,21 @@ Run command:
 
  ```
  $ npm install
- ```    
-
-  ```
- $ npx hardhat test
-
- ```    
+ ```     
 
  # Deployment
+ Setup hardhat, and generate a hardhat project
 
   ```
  $ npx hardhat compile
 
  ```  
 
-  ```
 
   ```
    $ npx hardhat run scripts/deploy.js --network goerli
+  ```
+
   ```
  $ npx hardhat verify --network goerli smart contract address stablecoin address
 
@@ -96,6 +93,7 @@ Run command:
 
 ```
 npx hardhat run --network mainnet scripts/deploy.js
+
 ```
 
 # Conclusion
